@@ -1,12 +1,13 @@
 <div class="row">
     <div class="col-6">
         <div class="mb-3">
+            <!--Hacer operacion segun indicación-->
             <label for="num1" class="form-label">Numero1</label>
-            <input type="text"[(ngModel)]='num1' class="from-control" name="num1" placeholder="Numero1">
+            <input type="text" [(ngModel)]='num1' class="from-control" name="num1" placeholder="Numero1">
         </div>
         <div class="mb-3">
             <label for="num2" class="form-label">Numero2</label>
-            <input type="text"[(ngModel)]='num2' class="from-control" name="num2" placeholder="Numero2">
+            <input type="text" [(ngModel)]='num2' class="from-control" name="num2" placeholder="Numero2">
         </div>
         <div class="mb-3">
             <button (click)="operacion()" class="btn-primary">Calcular</button>
@@ -17,11 +18,19 @@
         <label>Resta<input [(ngModel)]='radioButton' type="radio" name="operacion" value="2"></label><br>
         <label>Multiplicacion<input [(ngModel)]='radioButton' type="radio" name="operacion" value="3"></label><br>
         <label>Division<input [(ngModel)]='radioButton' type="radio" name="operacion" value="4"></label><br>
-
-        <!--<button (click)="operacion()" class="btn-primary">Sumar</button><br>
-        <button (click)="operacion()" class="btn-primary">Restar</button><br>
-        <button (click)="operacion()" class="btn-primary">Multiplicar</button><br>
-        <button (click)="operacion()" class="btn-primary">Dividir</button><br>-->
-        <h2>Resultado: {{resultado}}</h2>
+        <h2>Resultado de Operación: {{resultado}}</h2><br>
+        <!--DE C A F-->
+        <div class="mb-3">
+            <h1>convertir °F - °C</h1>
+            <label for="grado" class="form-label">grado1</label>
+            <input type="text" [(ngModel)]='grado' class="from-control" name="grad1" placeholder="grado1">
+        </div>
+        <div class="mb-3">
+            <button (click)="operacion()" class="btn-primary">Generar</button>
+        </div>
+        <div>
+            <label>Celsius<input [(ngModel)]='radioButton' type="radio" name="operacion" value="5"></label><br>
+            <label>Fahrenheit<input [(ngModel)]='radioButton' type="radio" name="operacion" value="6"></label><br>
+            <h2>Resultado: {{res}}</h2>
+        </div>
     </div>
-</div>
