@@ -6,21 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./operas-bas.component.css']
 })
 export class OperasBasComponent {
-  num1: string = '';
-  num2: string = '';
+  num1=0;
+  num2=0;
   resultado: number = 0;
   //C a F
   grado: number = 0;
   cel: number = 0;
   far: number = 0;
-  res:number =0;
+  res=0;
 
   radioButton: string = '';
 
   //Hacer la operación indicada 
 
-  operacion(): void {
-    /*this.resultado=  parseInt(this.num1)+parseInt(this.num2);*/
+ /* operacion(): void {
+    this.resultado=  parseInt(this.num1)+parseInt(this.num2);
     //Operaciones
     if (this.radioButton == "1") {
       this.resultado = parseInt(this.num1) + parseInt(this.num2);
@@ -42,6 +42,11 @@ export class OperasBasComponent {
       this.res = ((this.grado- 32) * 5/9);
     }
     
+    }*/
+
+
+    suma(){
+      this.res=this.num1+this.num2;
     }
     
     }
